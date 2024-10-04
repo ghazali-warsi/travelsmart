@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Css for Global Styles */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    background-color: rgb(21,7,37);
+    color: white;
+}
+.container{
+    width: 90%;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    display: block;
+}
+/* For utlis class */
+.margin_top{
+    margin-top: 5rem;
+}
+.margin_top2{
+    margin-top: 3rem;
+}
+.ta_cen{
+    text-align: center;
+}
+.heading.with_bottomline{
+    border-bottom: 2px solid rgb(70,31,114);
+    padding-bottom: 1rem;
+}
+.heading .btns i {
+    border-radius: 50%;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border: 2px solid #fabf28;
+    cursor: pointer;
+}
+h3 hr{
+    width: 60px;
+    border: 1.7px solid #b520a3;
+}
+.input{
+    width: 100%;
+    padding: 0.8rem 1rem;
+    outline: none;
+    font-size: 1.1rem;
+    color: white;
+}
+.input.white_outline{
+    border: 1px solid white;
+    background-color: transparent;
+}
+.input::placeholder{
+    color: white;
+}
+/* For Font Sizes */
+.heading_large{
+    font-size: 5rem;
+    font-family: "Raleway", sans-serif;
+}
+.heading_medium{
+    font-size: 3rem;
+    font-family: "Raleway", sans-serif;
+}
+.heading_small{
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+}
+.body_text_large{
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+}
+.body_text_medium{
+    font-size: 1.5rem;
+    font-family: "Raleway", sans-serif;
+}
+.body_text_small{
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    font-family: "Raleway", sans-serif;
+}
+.body_text_exsmall{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: "Raleway", sans-serif;
+}
+/* For Flex_boxes */
+.flex{
+    display: flex;
+}
+.flex.col{
+    flex-direction: column;
+}
+.flex.wrap{
+    flex-wrap: wrap;
+}
+.flex.alg_cen{
+    align-items: center;
+}
+.flex.alg_str{
+    align-items: start;
+}
+.flex.alg_end{
+    align-items: end;
+}
+.flex.jc_sb{
+    justify-content: space-between;
+}
+.flex.jc_cen{
+    justify-content: center;
+}
+/* For gap */
+.gap_large{
+gap: 2rem;
+}
+.gap_medium{
+    gap: 1rem;
+}
+.gap_small{
+    gap: 0.5rem;
+}
+/* For btns */
+.btn{
+    padding: 0.8rem 1rem;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-family: "Raleway", sans-serif;
+    cursor: pointer;
+    letter-spacing: 1px;
+    height: max-content;
+}
+.btn.withwidth{
+    width: 10rem;
+    text-align: center;
+}
+.btn.primary{
+    background: linear-gradient(42deg, #7436bb 0.01%, #b520a3 100%);
+    border: 2px solid #d12bec;
+}
+.btn.primary_outline{
+    border: 2px solid #d12bec;
+    position: relative;
+}
+.btn.primary:hover{
+    background: linear-gradient(180deg, #ff7527 0%, #fabf28);
+    color: black;
+}
+.btn.primary_outline:hover{
+background: linear-gradient(180deg, #ff7527 0%, #fabf28);
+color: black;
+}
+.btn.secondry_outline{
+    border: 2px solid #ff7527;
+}
+/* Start Of Media Quaries */
+/* Media Quaries For FontSizes */
+@media screen and (max-width:800px) {
+    .heading_large{
+       font-size: 4rem;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .heading_large{
+       font-size: 3rem;
+    }
+}
+
+/* For heading medium */
+@media screen and (max-width:520px) {
+    .heading_medium{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width:420px) {
+    .heading_medium{
+        font-size: 2rem;
+    }
+    .heading_small{
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width:300px) {
+    .heading_medium{
+        font-size: 1.8rem;
+    }
+    .heading_small{
+        font-size: 1.5rem;
+    }
+}
+/* Media Quaries For Margin_top */
+@media screen and (max-width:1000px) {
+    .margin_top{
+        margin-top: 3rem;
+    }
+}
+@media screen and (max-width:768px) {
+    .heading .btns i {
+        display: none;
+    }
+}
